@@ -1,9 +1,19 @@
 #!/usr/bin/bash
-
-export SRC_HOME=`pwd`
+#############################################
+#                                           #
+# Copyright (c) 2023-2024                   #
+# Author  : James                           #
+# E-mail  : xxxxxxxxxx@qq.com               #
+# Tel	  : xxxxxxxxxxx                     #
+# Date	  : 2023/12/17                      #
+# Address : Xi'an,ShanXi Province,China     #
+# Version : 1.0                             #
+#                                           #
+#############################################
 
 helpInfo="
 	该脚本的主要功能是自动化创建一个简单的UVM验证平台
+	使用方式：./generate.sh [options] [value]
 	脚本支持的参数以及功能：
 	-help	：打印帮助信息
 	-create : 创建仿真工程目录以及仿真脚本文件
@@ -33,7 +43,7 @@ done
 if [ $create == 1 ] ; then
 	if [ $PRJ_BASE ] ; then
 		cd $PRJ_BASE
-		mkdir -p src/top src/rtl doc sim/models sim/tbench sim/sv sim/cases sim/include sim/filelist scripts
+		mkdir -p src/top src/rtl docs sim/models sim/tbench sim/sv sim/cases sim/include sim/filelist scripts
 	else
 		echo "环境变量<\$PRJ_BASE>没有设置，请先设置环境变量"
 	fi
