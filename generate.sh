@@ -33,7 +33,7 @@ do
 		-test)	  testParam=$2
 				  echo "获取的测试参数为：$testParam"
 				  shift;;
-		-clean)   echo "开始删除仿真工程目..."
+		-clean)   echo "开始删除仿真工程目录..."
 				  clean=1;;
 			*)    echo "输入参数错误";;
 	esac

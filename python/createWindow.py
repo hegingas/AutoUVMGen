@@ -4,7 +4,7 @@ from PySide6.QtWidgets import *
 myApp = QApplication(sys.argv)
 
 myWindow = QWidget()
-myWindow.setWindowTitle('UVM Automatic Tool')
+myWindow.setWindowTitle('UVM自动化工具')
 myWindow.resize(300,150)
 
 myLabel = QLabel(myWindow)
