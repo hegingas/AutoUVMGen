@@ -43,7 +43,7 @@ done
 if [ $create == 1 ] ; then
 	if [ $PRJ_BASE ] ; then
 		cd $PRJ_BASE
-		mkdir -p src/top src/rtl docs sim/models sim/tbench sim/sv sim/cases sim/include sim/filelist scripts
+		mkdir -p project/src/top project/src/rtl project/docs project/sim/models project/sim/tbench project/sim/sv project/sim/cases project/sim/include project/sim/filelist project/scripts
 	else
 		echo "环境变量<\$PRJ_BASE>没有设置，请先设置环境变量"
 	fi
@@ -52,7 +52,7 @@ fi
 if [ $clean == 1 ] ; then
 	if [ $PRJ_BASE ] ; then
 		cd $PRJ_BASE
-		rm -rf src doc sim scripts
+		rm -rf project
 	else
 		echo "环境变量<\$PRJ_BASE>没有设置，请先设置环境变量"
 	fi
